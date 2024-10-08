@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+   
+  </head>
+  <body>
+   <h1>My first JavaScript program</h1>
+   <input type='text'>
+  </body>
+</html>
+<script>
+// I am a JavaScript Comment
+alert("Hello World")
+
+</script>
