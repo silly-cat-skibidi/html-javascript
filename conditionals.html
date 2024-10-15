@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+   
+  </head>
+  <body>
+   <h3>provisional license eligibility</h3>
+   <input id="nameIn" placeholder='Name'>
+    <input id="ageIn" placeholder="Age">
+	<br/>
+	<button onclick-"checkEligible()">
+		Check if eligible
+	</button>
+	<h4>
+		Eligible: <a id="outEligible"> ---
+		</a>
+	</h4>
+  </body>
+</html>
+<script>
+function checkEligible(){
+	var age=document.getElementById('ageIn').value;
+	if(age>=17)[
+		document.getElementById('outEligible').innerHTML='Yes';
+	}
+	else if (age==16){
+		document.getElementById('outEligible').innerHTML='moped only';
+	else{
+		document.getElementById('outEligible').innerHTML='No';
+		}
+	}
+
+</script>
