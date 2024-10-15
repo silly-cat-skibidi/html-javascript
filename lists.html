@@ -37,4 +37,12 @@ function addData(){
         }
     }
 // push is same as append in python
+function calcAverage(){
+	var sum=0; 
+	for(var index=0; index<myAges.length; index+=1){
+		sum+=parseInt (myAges[index]);
+		}
+	var average=sum / myAges.length;
+	outAvg.innerHTML=average;
+	}
 </script>
