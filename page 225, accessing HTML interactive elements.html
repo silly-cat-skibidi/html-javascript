@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+   
+  </head>
+  <body>
+   <h1>Using JS to access HTML</h1>
+   <button onclick='getData()'>
+		click me
+	</button>
+	</br>
+	<input id='nameIn'>
+	<input id='ageIn'>
+	</br>
+	</br>
+	<h4>
+		Name: <a id='outBox'---</a>
+  </body>
+</html>
+<script>
+function getData(){
+// I am a JavaScript Comment
+	var name = document.getElementById('nameIn').value;
+	var name = document.getElementById('outBox').innerHTML=name;
+	alert(name);
+	}
+
+</script>

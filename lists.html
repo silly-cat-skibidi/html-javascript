@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<! pg 237 using lists>
+<html>
+  <head>
+   
+  </head>
+  <body>    
+    <input id="nameIn" placeholder="Name">
+    <input id="ageIn" placeholder="Age">
+    <button onclick="addData()">
+        Add data to list
+    </button>
+    <br\>
+   
+    Output:
+    <br\>
+    <textarea id="outDisplay" readonly>
+    </textarea>
+   
+   
+  </body>
+</html>
+<script>
+var myNames =[];
+var myAges = [];
+var nameEle=document.getElementById("nameIn");
+var ageEle=document.getElementById("ageIn");
+var outEle=document.getElementById("outDisplay");
+
+function addData(){
+// create variable called var to store result from user input
+    myNames.push(nameEle.value);
+    myAges.push(ageEle.value);
+    outEle.value="";
+    for (var index=0; index<myNames.length; index+=1){
+        outEle.value+=myNames[index]+"\t\t"+myAges[index]+"\n";
+        }
+    }
+// push is same as append in python
+</script>

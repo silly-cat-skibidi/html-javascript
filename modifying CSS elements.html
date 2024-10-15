@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+   
+  </head>
+  <body>
+   <h1>modifying CSS elements</h1>
+   <button onclick='valid()'>
+		valid
+	</button>
+	<button onclick='invalid()'>
+		invalid
+	</button>
+	</br>
+   <input id='emailIn'>
+   </br>
+   <button onclick="changeFontSize('0px')">
+		Regular
+	</button>
+	<button onclick="changeFontSize('30px')">
+		Large
+	</button>
+	</br>
+	<p id='text'>
+		meow meow meow meow meow meow.
+	</p>
+   
+  </body>
+</html>
+<script>
+function valid(){
+	document.getElementById('emailIn').style.backgroundColor='green';
+	}
+function invalid(){
+	document.getElementById('emailIn').style.backgroundColor='red';
+	}
+function changeFontSize(sizeIn){
+	document.getElementById('text').style.fontSize=sizeIn
+}
+
+</script>
